@@ -2,7 +2,7 @@ import sqlalchemy
 from sqlalchemy import Column, Integer, Float, String, Text, DateTime, Enum, ForeignKey
 
 from db import metadata
-from enums import State
+from models.enums import State
 
 complaint = sqlalchemy.Table(
     "complaints",
@@ -12,7 +12,7 @@ complaint = sqlalchemy.Table(
     Column("description", Text, nullable=False),
     Column("photo_url", String(200), nullable=False),
     Column("amount", Float, nullable=False),
-    Column("created_at", DateTime, server_default=sqlalchemy.func.utcnow()),
+    Column("created_at", DateTime, server_default=sqlalchemy.func.now()),
     Column("status", Enum(State), nullable=False, server_default=State.pending.name),
     Column("complainer_id", ForeignKey("users.id"), nullable=False)
 )
