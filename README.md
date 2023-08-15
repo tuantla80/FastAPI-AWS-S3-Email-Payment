@@ -4,4 +4,6 @@
 - 3 parts seperately by a dot (*******.********.*********)
   - Header: algo (eg. HS256) and type
   - Payload: data
-  - Signature: encode content of header and payload to a secret string  
+  - Signature: encode content of header and payload to a secret string
+## 2. Database Migration Tool
+### Alembic
