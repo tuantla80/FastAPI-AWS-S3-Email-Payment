@@ -1,3 +1,9 @@
+'''
+(venv) C:\Python\FastAPI-Email-Payment-AWS> uvicorn main:app --reload
+- http://127.0.0.1:8000
+- http://127.0.0.1:8000/docs
+'''
+
 from fastapi import FastAPI
 import uvicorn
 
