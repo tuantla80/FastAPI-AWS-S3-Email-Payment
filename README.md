@@ -10,7 +10,7 @@
 - To create endpoints of the app
 - To define behavior on GET, POST, PUT, DELETE for different routes
 ### Schemas  
-- To validate data and structures of request and response objects  
+- To validate data and structures of request and response objects using pydantic 
 
 ## 2. Authentication and Authorization  
 ### JWT (JSON Web Token)  
