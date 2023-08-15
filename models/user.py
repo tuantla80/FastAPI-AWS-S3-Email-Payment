@@ -12,7 +12,7 @@ user = sqlalchemy.Table(
     Column("password", String(255)),
     Column("first_name", String(200)),
     Column("last_name", String(200)),
-    Column("phone_name", String(20)),
+    Column("phone", String(20)),
     Column("role", Enum(RoleType), nullable=False, server_default=RoleType.complainer.name),
     Column("iban", String(200)),
 )
