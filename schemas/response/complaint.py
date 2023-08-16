@@ -5,6 +5,6 @@ from models import State
 
 
 class ComplaintOut(BaseComplaint):
-   id: int
-   created_at: datetime
-   status: State
+    id: int
+    created_at: datetime
+    status: State

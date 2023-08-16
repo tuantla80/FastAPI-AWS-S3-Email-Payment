@@ -14,5 +14,5 @@ complaint = sqlalchemy.Table(
     Column("amount", Float, nullable=False),
     Column("created_at", DateTime, server_default=sqlalchemy.func.now()),
     Column("status", Enum(State), nullable=False, server_default=State.pending.name),
-    Column("complainer_id", ForeignKey("users.id"), nullable=False)
+    Column("complainer_id", ForeignKey("users.id"), nullable=False),
 )
