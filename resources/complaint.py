@@ -8,6 +8,7 @@ from managers.complaint import ComplaintManager
 from schemas.request.complaint import ComplaintIn
 from schemas.response.complaint import ComplaintOut
 
+
 router = APIRouter(tags=["Complaints"])
 
 

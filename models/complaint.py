@@ -10,7 +10,7 @@ complaint = sqlalchemy.Table(
     Column("id", Integer, primary_key=True),
     Column("title", String(120), nullable=False),
     Column("description", Text, nullable=False),
-    Column("pho to_url", String(200), nullable=False),
+    Column("photo_url", String(200), nullable=False),
     Column("amount", Float, nullable=False),
     Column("created_at", DateTime, server_default=sqlalchemy.func.now()),
     Column("status", Enum(State), nullable=False, server_default=State.pending.name),
