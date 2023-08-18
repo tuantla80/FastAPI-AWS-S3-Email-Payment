@@ -6,12 +6,17 @@
 ### Models  
 - To structure tables in DB
 - To define schema for the objects
-### Resources (Router)  
+### Resources (Routes)  
 - To create endpoints of the app
 - To define behavior on GET, POST, PUT, DELETE for different routes
+- To communiocate with managers to achieve its purpose
 ### Schemas  
-- To validate data and structures of request and response objects using pydantic 
-
+- To validate data and structures of request and response objects using pydantic
+### Services  
+- To communicate with third party apps.
+- In this project: AWS S3, AWS SES (Simple Email Service) and Wise payment service.
+### Utils  
+- To include helper functions used in the app.
 ## 2. Authentication and Authorization  
 ### JWT (JSON Web Token)  
 - Transmiting client <--> server in a stateless and secure way.
