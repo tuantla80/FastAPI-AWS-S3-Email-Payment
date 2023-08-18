@@ -25,6 +25,11 @@
   - Payload: data
   - Signature: encode content of header and payload to a secret string
 ### Custom HTTPBearer  
-### Add role to user model
-## 3. Database Migration Tool
+### Add role to user model  
+## 3. AWS S3 Service  
+### Create a bucket on S3  
+### Connect with AWS service using boto3 library  
+- Get credentials: Access key ID and Secret access key
+### Upload user's images to S3
+## 4. Database Migration Tool
 ### Alembic
