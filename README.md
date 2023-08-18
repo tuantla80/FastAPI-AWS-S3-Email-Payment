@@ -24,5 +24,7 @@
   - Header: algo (eg. HS256) and type
   - Payload: data
   - Signature: encode content of header and payload to a secret string
+### Custom HTTPBearer  
+### Add role to user model
 ## 3. Database Migration Tool
 ### Alembic
