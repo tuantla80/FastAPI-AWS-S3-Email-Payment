@@ -46,8 +46,8 @@ async def delete_complaint(complaint_id):
     dependencies=[Depends(oauth2_scheme), Depends(is_approver)],
     status_code=204,
 )
-async def approve_complaint(complaint_id: int):
-    await ComplaintManager.approve(complaint_id)
+async def approve_complaint(request: Request, complaint_id: int):
+    await ComplaintManager.approve(complaint_id, appover=request.state.user)
 
 
 @router.put(
