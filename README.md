@@ -30,6 +30,9 @@
 ### Create a bucket on S3  
 ### Connect with AWS service using boto3 library  
 - Get credentials: Access key ID and Secret access key
-### Upload user's images to S3
-## 4. Database Migration Tool
+### Upload user's images to S3  
+## 4. AWS SES (Simple Email Service)  
+- Create ses.py to send email after approving or rejecting is completed.
+- Modified managers.py to get email of approver and complainers.
+## 5. Database Migration Tool
 ### Alembic
