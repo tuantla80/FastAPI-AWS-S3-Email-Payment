@@ -34,5 +34,11 @@
 ## 4. AWS SES (Simple Email Service)  
 - Create ses.py to send email after approving or rejecting is completed.
 - Modified managers.py to get email of approver and complainers.
-## 5. Database Migration Tool
+## 5. Wise payment  
+- Step 0: Get your profile
+- Step 1: Create a quote
+- Step 2: Create a recipient account
+- Step 3: Create a transfer
+- Step 4: Fund a transfer or cancel transfer 
+## 6. Database Migration Tool
 ### Alembic
