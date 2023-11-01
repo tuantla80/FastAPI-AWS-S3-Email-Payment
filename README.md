@@ -78,3 +78,14 @@
 - Run Flake8:
   $ docker-compose exec web flake8 .
 ```
+##### Black 
+```
+Black is a PEP 8 compliant opinionated formatter.
+- Install black
+- Update the containers:
+  $ docker-compose up -d --build
+- Run Black
+  $ docker-compose exec web black . --check --exclude "env"
+- Running it with the diff option
+  $ docker-compose exec web black . --diff --exclude "env"
+```
