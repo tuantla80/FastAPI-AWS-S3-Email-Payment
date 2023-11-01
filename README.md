@@ -56,5 +56,25 @@
   $ docker-compose exec web python -m pytest --cov="."
   Want to view an HTML version
   $ docker-compose exec web python -m pytest --cov="." --cov-report html
-
+```
+#### Code Quality  
+##### Flake8  
+```
+- Checking code for stylistic or programming errors
+ Flake8 combines two popular linters -- pep8 and pyflakes
+- Install flake8
+- To configure Flake8, add a setup.cfg (or .flake.8) file to the "project" directory
+  [flake8]
+  max-line-length = 119
+  exclude =
+      migrations
+      __pycache__
+      manage.py
+      settings.py
+      env
+      .env
+- Update the containers
+  $ docker-compose up -d --build
+- Run Flake8:
+  $ docker-compose exec web flake8 .
 ```
