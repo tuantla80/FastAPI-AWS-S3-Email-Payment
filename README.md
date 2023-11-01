@@ -89,3 +89,22 @@ Black is a PEP 8 compliant opinionated formatter.
 - Running it with the diff option
   $ docker-compose exec web black . --diff --exclude "env"
 ```
+##### isort  
+```
+To quickly sort all imports alphabetically and automatically separate them into sections.
+- Install isort
+- Update the containers:
+  $ docker-compose up -d --build
+- Run isort
+  $ docker-compose exec web isort . --check-only --skip "env"
+  $ docker-compose exec web isort . --diff --skip "env"
+  Apply changes
+  $ docker-compose exec web isort .
+```
+##### Verify one last time that Flake8, Black, and isort all pass  
+```
+$ docker-compose exec web flake8 .
+$ docker-compose exec web black . --check
+$ docker-compose exec web isort . --check-only
+```
+
