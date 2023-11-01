@@ -41,4 +41,20 @@
 - Step 3: Create a transfer
 - Step 4: Fund a transfer or cancel transfer 
 ## 6. Database Migration Tool
-### Alembic
+### Alembic  
+### 7. Code Coverage and Quality  
+#### Code Coverage  
+```
+- Install pytest-cov
+- Configure the coverage reports in a .coveragerc file as below:
+  [run]
+  omit = tests/*
+  branch = True
+- Update the container:
+  $ docker-compose up -d --build
+- Run the tests with coverage
+  $ docker-compose exec web python -m pytest --cov="."
+  Want to view an HTML version
+  $ docker-compose exec web python -m pytest --cov="." --cov-report html
+
+```
