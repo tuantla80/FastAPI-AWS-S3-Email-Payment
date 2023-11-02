@@ -107,4 +107,7 @@ $ docker-compose exec web flake8 .
 $ docker-compose exec web black . --check
 $ docker-compose exec web isort . --check-only
 ```
+### 8. Continuous Integration (CI) with GitHub Actions  
+#### GitHub Packages  
+
 
